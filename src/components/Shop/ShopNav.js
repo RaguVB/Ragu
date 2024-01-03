@@ -7,7 +7,7 @@ function ShopNav() {
     return(
         <div className='overflow-hidden'>
             <div className='font-display mt-12 mb-2 text-3xl md:text-4xl font-medium text-center text-gray-700'>
-                {name.collection === undefined && <h1> Flora's Collection </h1>}
+                {name.collection === undefined && <h1> BLOOMIN Collection </h1>}
                 {name.collection === 'airPurifying' && <h1>Air Purifying Plants</h1>}
                 {name.collection === 'beginner' && <h1>Plants for Beginners</h1>}
                 {name.collection === 'pet-friendly' && <h1>Pet Friendly Plants</h1>}

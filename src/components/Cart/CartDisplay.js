@@ -18,7 +18,7 @@ function CartDisplay(props) {
 
     return (
         <div className='flex justify-between space-x-6 items-center mx-4 my-4'>
-            <Link to={`/shop/collection/${props.name}`}
+            <Link to={`/shop/collection/Rs{props.name}`}
             className='w-1/5 shadow-md hover:opacity-75 hover:border hover:border-gray-300'
             >
                 <img
@@ -46,7 +46,7 @@ function CartDisplay(props) {
                 </div>
             </div>
 
-            <p className='w-1/6 font-semibold'>${Math.round((props.price * props.quantity)* 100)/100}</p>
+            <p className='w-1/6 font-semibold'>Rs{Math.round((props.price * props.quantity)* 100)/100}</p>
         </div>
     )
 }

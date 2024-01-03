@@ -61,15 +61,15 @@ const Cart = () => {
                 </div>
                 <div className='flex p-4 justify-between'>
                   <p className=''>Subtotal</p>
-                  <p className='font-semibold'>${Math.round(totalPrice * 100)/ 100} </p>
+                  <p className='font-semibold'>Rs {Math.round(totalPrice * 100)/ 100} </p>
                 </div>
               </div>
               <div className='text-center'>
-                <button
+                <Link to="/checkout"><button
                 className='h-12 p-4 w-2/4 text-sm bg-gray-900 text-white rounded transition
                   duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'>
-                    Checkout
-                </button>
+                    Checkout 
+                </button></Link>
               </div>
             </div>
             }
